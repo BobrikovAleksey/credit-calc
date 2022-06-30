@@ -8,9 +8,7 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@component/*": ["./src/components/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@store/*": ["./src/store/*"]
+      "@app/*": ["./*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
