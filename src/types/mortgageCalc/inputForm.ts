@@ -1,8 +1,15 @@
 import {PaymentTypeEnum} from '@app/types/enums';
 import {TypeEnum} from './enums';
 
-export interface ICreditAmountProps {
+export interface INumberInputProps {
+  id: string;
+  label: string;
+  length?: number;
+  placeholder?: string;
   readOnly?: boolean;
+  setValueHandler: Function;
+  text?: string;
+  value: number;
 }
 
 export interface IInputFormState {

@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 const InputForm: FC = () => {
-  const handleSubmit = (event: FormEvent<HTMLElement>) => {
+  const submitHandler = (event: FormEvent<HTMLElement>) => {
     console.log('submit');
     event.preventDefault();
   };
@@ -15,7 +15,7 @@ const InputForm: FC = () => {
       <Header />
 
       <Form
-        onSubmit={handleSubmit}>
+        onSubmit={submitHandler}>
         <Body />
 
         <Footer />
