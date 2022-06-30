@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC} from 'react';
 import MortgageCalc from '@app/components/MortgageCalc';
 
 const App: FC = () => {

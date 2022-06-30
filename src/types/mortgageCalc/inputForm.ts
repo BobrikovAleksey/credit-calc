@@ -1,23 +1,14 @@
-import {PaymentTypeEnum} from '@app/types/enums';
+import {PaymentTypeEnum, TermTypeEnum} from '@app/types/enums';
 import {TypeEnum} from './enums';
-
-export interface INumberInputProps {
-  id: string;
-  label: string;
-  length?: number;
-  placeholder?: string;
-  readOnly?: boolean;
-  setValueHandler: Function;
-  text?: string;
-  value: number;
-}
 
 export interface IInputFormState {
   creditAmount: number;
   creditTerm: number;
   initialFee: number;
+  initialFeePercent: number;
   paymentType: PaymentTypeEnum;
   price: number;
   rate: number;
+  termType: TermTypeEnum;
   type: TypeEnum;
 }
